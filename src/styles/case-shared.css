@@ -5,6 +5,7 @@
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   border-bottom: 1px solid var(--line);
+  animation: nav-in 0.9s 0.1s both cubic-bezier(0.22, 1, 0.36, 1);
 }
 .case-nav > span {
   justify-self: end;
@@ -18,4 +19,8 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.case-back:hover {
+  transform: translateX(-6px);
 }
